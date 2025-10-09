@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url(./fonnts.com-Filicudi_Solid.otf);
+}
+@font-face {
+    font-family: 'MyFont2';
+    src: url(./Grave.otf);
+}
+@font-face {
+    font-family: 'MyFont3';
+    src: url(./Beautiful\ People\ two\ Personal\ Use.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#parent{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    align-items: center;
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    justify-content: space-evenly;
+}    
+#box1{
+    height: 200px;
+    width: 200px;
+    background-color: aquamarine;
+}
+#box2{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(10, 10, 232);
+}#box3{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(250, 58, 5);
+}

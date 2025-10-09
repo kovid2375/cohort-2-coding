@@ -1,0 +1,138 @@
+@font-face {
+    font-family: "hello";
+    src: url(./Valorant\ Font.ttf);
+}
+@font-face{
+    font-family: "yoo";
+    src:url(./ashy.ttf);
+}
+@font-face{
+    font-family: "myFont";
+    src:url(./Beautiful\ People\ two\ Personal\ Use.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#name{
+    color: white;
+    background-color: rgb(30, 55, 80);
+    font-size: 20px;
+    text-align: center;
+    height: 175px;
+    width: 1390px;
+    font-family: hello;
+    font-weight: 100;
+
+}
+#name2{
+    height: 100px;
+    padding: 50px;
+    font-size: 45px;
+    font-weight: 50px;
+
+}
+#About{
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 20px;
+    margin-left: 85px;
+    margin-right: 85px;
+}
+.para{
+    font-family: 'myFont';
+    font-size: 20px;
+    color: #0011ff;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#edu{
+    background-color: rgb(184, 233, 233);
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 20px;
+    margin-left: 85px;
+    margin-right: 85px;
+    height: 200px;
+    border-radius: 30px;
+}
+#b{
+    background-color: white;
+    margin: 20px;
+    margin-left: 300px;
+    margin-right: 300px;
+    height: 40px;
+    border-radius: 15px;
+    
+}
+#sk{
+    background-color: rgb(241, 240, 164);
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 20px;
+    margin-left: 85px;
+    margin-right: 85px;
+    height: 320px;
+    border-radius: 30px;
+}
+#pro{
+    background-color: rgb(225, 224, 231);
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 20px;
+    margin-left: 85px;
+    margin-right: 85px;
+    height: 250px;
+    border-radius: 30px;
+}
+#con{
+     background-color: rgb(196, 235, 217);
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 20px;
+    margin-left: 85px;
+    margin-right: 85px;
+    height: 250px;
+    border-radius: 30px;
+}
+#footer{
+    color: white;
+    background-color: rgb(30, 55, 80);
+    font-size: 20px;
+    text-align: center;
+    height: 50px;
+    width: 1390px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 10px;
+    padding-top: 15px;
+}
+.same{
+    margin: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    padding: 5px;
+}
+.big{
+    margin-top:20px;
+    font-family: cursive;
+    font-weight: 400;
+    padding: 5px;
+
+}
+p{
+    padding-top: 20px;
+    font-size: 15px;
+}

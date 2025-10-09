@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url(./fonnts.com-Filicudi_Solid.otf);
+}
+@font-face {
+    font-family: 'MyFont2';
+    src: url(./Grave.otf);
+}
+@font-face {
+    font-family: 'MyFont3';
+    src: url(./Beautiful\ People\ two\ Personal\ Use.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color:#fffefe;
+}
+h1{
+    color: rgb(243, 4, 4);
+    text-align: center;
+    font-family: 'MyFont3';
+    font-size: 250px;
+
+
+}
+#nav p {
+    text-decoration: none;
+    color: rgb(255, 8, 8);
+    font-family: 'MyFont2';
+    padding-top: 30px;
+    padding-left: 60px;
+    font-size: 60px;
+    text-align: left;
+
+
+    
+}
+#dob p{
+    color: rgb(248, 7, 7);
+    font-family: 'MyFont2';
+    font-size: 30px;
+    text-align: right;
+    padding-right: 30px;
+
+}
+#name{
+    height: 100px;
+    width: 100%;
+}
+#name h2{
+    position: absolute;
+    top: 70%;
+    right: 20%;
+    color: rgb(250, 5, 5);
+    text-align: center;
+    font-family: fantasy;
+    font-size: 20px;
+    text-align: right;
+    padding-right: 30px;
+    font-weight: 100;
+    margin-right: 10px;
+    
+
+}
+#details p{
+    position: absolute;
+    bottom: 15%;
+    left: 5%;
+    color: rgb(252, 10, 10);
+    width: 300px;
+    font-family: Helvetica, sans-serif;
+    margin-right: 5px;
+
+}
+img{
+    position: absolute;
+    
+    bottom:7%;
+    left: 42%;
+    height: 700px;
+    border-color: black;
+    border: none;
+
+}

@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url(./FerroRosso.ttf);
+}
+@font-face {
+    font-family: 'MyFont2';
+    src: url(./Grave.otf);
+}
+@font-face {
+    font-family: 'MyFont3';
+    src: url(./Beautiful\ People\ two\ Personal\ Use.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-image: url(./pexels-jonathanborba-31331380.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+h1{
+    font-size: 100px;
+    color: rgb(255, 0, 0);
+    font-family: 'MyFont2';
+    padding-top: 75px;
+    font-weight: 100;
+}
+h2{
+    font-size: 20px;
+    color: rgb(240, 224, 224);
+    font-family: 'MyFont';
+    font-weight: 100;
+}
+button{
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 10px;
+    border-radius: 10px;
+    background-color:transparent;
+    color: white;
+    font-family:monospace;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'MyFont3';
+}

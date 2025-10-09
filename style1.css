@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'hi';
+    src:url(./Valorant\ Font.ttf)
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+#hero{
+    color: blue;
+    text-align: center;
+    background-color: lightpink;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 300;
+    font-style: italic;
+    text-transform: capitalize;
+    text-align: center;
+}
+p{
+    font-family: verdana;
+    font-size: 20px;
+    color: royalblue;
+}
+#kovid{
+    color: green;
+    text-align: left;
+    background-color: lightyellow;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 300;
+    font-style: italic;
+    text-transform: capitalize;
+    text-align: left;
+}
+.bol{
+    color: red;
+    text-align: left;
+    background-color: lightgrey;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 300;
+    font-style: italic;
+    text-transform: capitalize;
+    text-align: left;
+}
+h3{
+    color: red;
+    font-size: 100px;
+    font-weight: 200;
+    font-family: hi;
+}
+#mydiv{
+    height: 200px;
+    width: 200px;
+    background-color: lightgreen;
+}

@@ -1,0 +1,255 @@
+
+/* Below-row: two side-by-side boxes under mid-bottom-row */
+#below-row {
+    display: flex;
+    
+    width: 100%;
+    /* margin: 30px 0 0 0; */
+    /* justify-content: center; */
+    /* margin: 20px; */
+}
+.below-box1{
+    /* flex: 1 1 0; */
+    height: 600px;
+    width: 750px;
+    background: #f3f3f3;
+    margin: 20px;
+    padding: 20px;
+    /* box-shadow: 0 2px 8px rgba(0,0,0,0.07); */
+    text-align: center;
+    background-image: url(./promo_icloud_plus__d4639vh3tz2a_medium.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.below-box2{
+    /* flex: 1 1 0; */
+    height: 600px;
+    width: 750px;
+    background: #f3f3f3;
+    
+    margin: 20px;
+    padding: 10px;
+    /* box-shadow: 0 2px 8px rgba(0,0,0,0.07); */
+    text-align: center;
+    background-image: url(./promo_airpodspro_3__f6xmza7bglei_medium.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.below-box1 h1, .below-box2 h1{
+    font-size: 40px;
+    font-weight: 100;
+    padding-top: 20px;
+    color:black;
+    font-weight: 200;
+}
+.below-box1 h3, .below-box2 h3{
+    font-size: 20px;
+    font-weight: 100;
+    color:black;
+}
+.below-box1 button, .below-box2 button{
+    margin: 18px 10px; /* spacing between buttons */
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: royalblue;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 100;
+}
+
+@media (max-width: 800px) {
+    #below-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .below-box {
+        max-width: 90vw;
+        margin-bottom: 18px;
+    }
+}
+@font-face {
+    font-family: "hello";
+    src: url(./Valorant\ Font.ttf);
+}
+@font-face{
+    font-family: "yoo";
+    src:url(./sf-pro-display_bold.woff2);
+}
+@font-face{
+    font-family: "myFont";
+    src:url(./Beautiful\ People\ two\ Personal\ Use.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    font-family: yoo;
+}
+#nav{
+    height: 60px;
+    width: 100%;
+    background-color: rgb(34, 34, 34);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+#nav h4{
+    color: white;
+    font-weight: 100;
+    font-size: 12px;
+}
+#center{
+    height: 80%;
+    width: 100%;
+    background-image: url(./hero_iphone_17_pro__bknyzxfk2agi_medium.jpg);
+    color: white;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    
+}
+#center h1{
+    font-size: 55px;
+    padding-top: 30px;
+    font-weight: 500;
+}
+#center h3{
+    font-size: 30px;
+    padding-top: 10px;
+    font-weight: 100;
+
+}
+#links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+
+}
+#links button{
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: royalblue;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 100;
+
+}
+#links button:nth-child(2){
+    background-color: transparent;
+    border: 1px solid royalblue;
+}
+#mid{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    padding-top: 10px;
+}
+#box1{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(241, 237, 237);
+    
+
+}
+#box1{
+    text-align: center; /* center inline elements (buttons) horizontally */
+    background-image: url(./hero_iphone_air__0gxyavihpiqu_mediumtall.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#box1 button{
+    margin: 18px 10px; /* spacing between buttons */
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: royalblue;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 100;
+}
+#box2{
+    width: 100%;
+    height: 600px;
+    margin-top: 10px;
+    background-color: rgb(241, 237, 237);
+    text-align: center;
+    background-image: url(./hero_iphone_17__c5vvimu9a20y_mediumtall.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+#box1 h1{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 40px;
+    color: black;
+    font-weight: 100;
+    font-size: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#box1 h3{
+    text-align: center;
+    
+    font-size: 40px;
+    color: black;
+    font-weight: 100;
+    font-size: 20px;
+}
+#box2 h1{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 40px;
+    color: black;
+    font-weight: 100;
+    font-size: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#box2 h3{
+    text-align: center;
+    font-size: 40px;
+    color: black;
+    font-weight: 100;
+    font-size: 20px;
+}
+#box2 button{
+    margin: 18px 10px; /* spacing between buttons */
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: royalblue;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 100;
+}
+
+
+
+
+
+
+
