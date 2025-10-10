@@ -1,0 +1,563 @@
+@font-face {
+    font-family: 'font1';
+    src: url(./Mona-Sans-870dff5a10221ba7d01cc47eca10d0b2f911bd4196bb941985490bd8c7363cd9.woff2);
+}
+@font-face {
+    font-family: 'font2';
+    src: url(./WFVisualSans-RegularText-46461986901f80620e484e70aa8cbb90ede25a01351d464819a4e47a3f38ea43.woff2);
+}
+@font-face {
+    font-family: 'font3';
+    src: url(./WFVisualSans-SemiBold-aa0e55353b6a1b897f76a0fcbf5561fa243ce1b8b9f6aebcb5a186f0536713b1.woff2);
+}
+@font-face {
+    font-family: 'font4';
+    src: url(./Rumbles.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+:root{
+    --card-zoom-scale: 1.12;
+    --card-zoom-duration: 0.45s;
+    --card-hover-shadow: 0 12px 30px rgba(0,0,0,0.28);
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    
+    
+}
+#header{
+    height: 8%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    margin: 10px;
+    padding: 20px;
+    gap: 20px; 
+    font-size: 11px;
+    font-family: font2;
+    font-weight: 200;
+}
+#header h2{
+    font-size: 45px;
+    rotate: -15deg;
+    font-family: font4;
+    font-weight: 200;
+}
+#signup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 60%;
+    gap: 10px;
+    font-size: 15px;
+    font-family: font1;
+    font-weight: 100;
+}
+#login{
+    height: 40px;
+    width: 100px;
+    color: white;
+    background-color: rgb(31, 1, 31);
+    border: none;
+    font-weight: 200;
+    
+    border-radius: 20px;
+    font-family: font1;
+    font-weight: 600;
+    gap: 5px;
+    cursor: pointer;
+}
+#content{
+    height: 400px;
+    width: 700px;
+    background-color: rgb(251, 251, 251);
+    margin: 40px;
+    padding: 15px;
+
+}
+#content h1{
+    font-size: 55px;
+    font-family: font1;
+    font-weight: 700;
+}
+#content p{
+    font-size: 18px;
+    letter-spacing: 1px;
+    word-spacing: 5px;;
+    font-family: font2;
+    margin-top: 10px;
+    font-family: font1;
+    font-weight: 500;
+}
+
+#shorts{
+    margin-top: 20px;
+    height: 40px;
+    width: 120px;
+    color: white;
+    background-color: rgb(31, 1, 31);
+    border: none;
+    font-weight: 150;
+    margin: 10px;
+    border-radius: 20px;
+    font-family: font1;
+    font-weight: 600;
+    gap: 10px;
+    cursor: pointer;
+}
+#designers{
+    margin-top: 20px;
+    height: 40px;
+    width: 120px;
+    background: transparent;
+    border: 1px solid black;
+    font-weight: 600;
+    margin: 10px;
+    border-radius: 20px;
+    font-family: font1;
+    font-weight: 600;
+    gap: 10px;
+    cursor: pointer;
+}
+#services{
+    margin-top: 20px;
+    height: 40px;
+    width: 120px;
+    background: transparent;
+    border: 1px solid black;
+    font-weight: 600;
+    border-radius: 20px;
+    font-family: font1;
+    font-weight: 600;
+    gap: 10px;
+    cursor: pointer;
+}
+#search{
+    height: 40px;
+    width: 90%;
+    margin: 10px;
+    border-radius: 15px;
+    padding-left: 10px;
+    font-family: font3;
+    font-weight: 500;
+    border: 2px solid pink;
+}
+#popular{
+    margin: 10px;
+    padding-left: 10px;
+    font-family: font3;
+    font-weight: 500;
+    font-family: font1;
+    font-weight: 600;
+    gap: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+#dashboard{
+    margin-top: 20px;
+    font-size: 12px;
+    height: 30px;
+    width: 90px;
+    align-items: center;
+    background: transparent;
+    border: 1px solid pink;
+    font-weight: 600;
+    border-radius: 20px;
+    font-family: font1;
+    gap: 10px;
+    cursor: pointer;
+}
+#landingpage{
+    margin-top: 20px;
+    font-size: 12px;
+    height: 30px;
+    width: 90px;
+    align-items: center;
+    background: transparent;
+    border: 1px solid pink;
+    font-weight: 600;
+    border-radius: 20px;
+    font-family: font1;
+    gap: 10px;
+    cursor: pointer;
+}
+#e-commerce{
+    margin-top: 20px;
+    font-size: 12px;
+    height: 30px;
+    width: 90px;
+    align-items: center;
+    background: transparent;
+    border: 1px solid pink;
+    font-weight: 600;
+    border-radius: 20px;
+    font-family: font1;
+    gap: 10px;
+    cursor: pointer;
+}
+#logo{
+    margin-top: 20px;
+    font-size: 12px;
+    height: 30px;
+    width: 90px;
+    align-items: center;
+    background: transparent;
+    border: 1px solid pink;
+    font-weight: 600;
+    border-radius: 20px;
+    font-family: font1;
+    gap: 10px;
+    cursor: pointer;
+}
+#card{
+    margin-top: 20px;
+    font-size: 12px;
+    height: 30px;
+    width: 90px;
+    align-items: center;
+    background: transparent;
+    border: 1px solid pink;
+    font-weight: 600;
+    border-radius: 20px;
+    font-family: font1;
+    gap: 10px;
+    cursor: pointer;
+}
+#icons{
+    margin-top: 20px;
+    font-size: 12px;
+    height: 30px;
+    width: 90px;
+    align-items: center;
+    background: transparent;
+    border: 1px solid pink;
+    font-weight: 600;
+    border-radius: 20px;
+    font-family: font1;
+    gap: 10px;
+    cursor: pointer;
+}
+#viedo{
+    height: 400px;
+    width: 600px;
+    background-color: blue;
+    position: absolute;
+    border-radius: 25px;
+    left: 55%;
+    top: 15%;
+    border: 1px solid black;
+}
+
+#viedo{
+    overflow: hidden; /* hide any overflow from the video */
+}
+
+#viedo video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* make the video cover the container */
+    display: block;
+}
+
+/* Global button hover: pink background + subtle shadow */
+:is(button, input[type="button"], .btn) {
+    transition: background-color 220ms ease, box-shadow 220ms ease, transform 220ms ease;
+}
+
+:is(button, input[type="button"], .btn):hover{
+    background-color: #e888b6 !important; /* pink */
+    box-shadow: 0 8px 20px rgba(255,136,194,0.18);
+    transform: translateY(-3px);
+}
+#nav2{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    gap: 40px;
+    font-family: font2;
+    font-size: 14px;
+    font-weight: 200;
+    padding: 40px;
+}
+#popular2{
+    height: 30px;
+    width: 90px;
+    background: transparent;
+    border: 1px dashed black;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-right: 5%;
+}
+#filters{
+    height: 30px;
+    width: 90px;
+    background: transparent;
+    border: 1px solid black;
+    font-weight: 600;
+    border-radius: 10px;
+    margin-left: 10%;
+    
+}
+#bigbox{
+    height: 300px;
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 10px;
+
+}
+#box1{
+    height: 250px;
+    width: 250px;
+    margin-top: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    position: relative;
+    border: 1px solid black;
+    overflow: hidden;
+}
+#box1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* smooth zoom */
+    transition: transform var(--card-zoom-duration) cubic-bezier(.2,.8,.2,1);
+    transform-origin: center center;
+    will-change: transform;
+    /* remove image corner radius so .card's overflow handles rounding */
+    border-radius: 10px;
+}
+#box1:hover img{
+    transform: scale(var(--card-zoom-scale));
+}
+#box1{
+    transition: box-shadow var(--card-zoom-duration) ease, transform var(--card-zoom-duration) ease;
+}
+#box1:hover{
+    box-shadow: var(--card-hover-shadow);
+    transform: translateY(-6px);
+}
+#box2{
+    height: 250px;
+    width: 250px;
+    margin-top: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    position: relative;
+    border: 1px solid black;
+     overflow: hidden;
+}
+#box2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* smooth zoom */
+    transition: transform var(--card-zoom-duration) cubic-bezier(.2,.8,.2,1);
+    transform-origin: center center;
+    will-change: transform;
+    /* remove image corner radius so .card's overflow handles rounding */
+    border-radius: 10px;
+}
+#box2:hover img{
+    transform: scale(var(--card-zoom-scale));
+}
+#box2{
+    transition: box-shadow var(--card-zoom-duration) ease, transform var(--card-zoom-duration) ease;
+}
+#box2:hover{
+    box-shadow: var(--card-hover-shadow);
+    transform: translateY(-6px);
+}
+#box3{
+    height: 250px;
+    width: 250px;
+    margin-top: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    position: relative;
+    border: 1px solid black;
+     overflow: hidden;
+}
+#box3 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* smooth zoom */
+    transition: transform var(--card-zoom-duration) cubic-bezier(.2,.8,.2,1);
+    transform-origin: center center;
+    will-change: transform;
+    /* remove image corner radius so .card's overflow handles rounding */
+    border-radius: 10px;
+}
+#box3:hover img{
+    transform: scale(var(--card-zoom-scale));
+}
+#box3{
+    transition: box-shadow var(--card-zoom-duration) ease, transform var(--card-zoom-duration) ease;
+}
+#box3:hover{
+    box-shadow: var(--card-hover-shadow);
+    transform: translateY(-6px);
+}
+#box4{
+    height: 250px;
+    width: 250px;
+    margin-top: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    position: relative;
+    border: 1px solid black;
+    overflow: hidden;
+}
+#box4 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* smooth zoom */
+    transition: transform var(--card-zoom-duration) cubic-bezier(.2,.8,.2,1);
+    transform-origin: center center;
+    will-change: transform;
+    /* remove image corner radius so .card's overflow handles rounding */
+    border-radius: 10px;
+}
+#box4:hover img{
+    transform: scale(var(--card-zoom-scale));
+}
+#box4{
+    transition: box-shadow var(--card-zoom-duration) ease, transform var(--card-zoom-duration) ease;
+}
+#box4:hover{
+    box-shadow: var(--card-hover-shadow);
+    transform: translateY(-6px);
+}
+.bt1{
+    height: 40%;
+    width: 100%;
+    background: linear-gradient(transparent, rgba(13, 13, 13, 0.486));
+    position: absolute;
+    bottom: -40%;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.bt2{
+    height: 40%;
+    width: 100%;
+    background: linear-gradient(transparent,rgba(13, 13, 13, 0.486));
+    position: absolute;
+    bottom: -40%;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.bt3{
+    height: 40%;
+    width: 100%;
+    background: linear-gradient(transparent,rgba(13, 13, 13, 0.486));
+    position: absolute;
+    bottom: -40%;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.bt4{
+    height: 40%;
+    width: 100%;
+    background: linear-gradient(transparent,rgba(13, 13, 13, 0.486));
+    position: absolute;
+    bottom: -40%;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    
+}
+#box1:hover .bt1{
+     /* rotate: 30deg; */
+     bottom: 0;
+     
+}
+#box2:hover .bt2{
+     /* rotate: 30deg; */
+     bottom: 0;
+     
+}
+#box3:hover .bt3{
+     /* rotate: 30deg; */
+     bottom: 0;
+     
+}
+#box4:hover .bt4{
+     /* rotate: 30deg; */
+     bottom: 0;
+     
+}
+.bt1 h4, .bt1 h3{
+    font-size: 20px;
+    color: white;
+    padding: 5px;
+    font-weight: 500;
+    font-family: font2;
+}
+.bt2 h4, .bt2 h3{
+    font-size: 20px;
+    color: white;
+    padding: 5px;
+    font-weight: 500;
+    font-family: font2;
+}
+.bt3 h4, .bt3 h3{
+    font-size: 20px;
+    color: white;
+    padding: 5px;
+    font-weight: 500;
+    font-family: font2;
+}
+.bt4 h4, .bt4 h3{
+    font-size: 20px;
+    color: white;
+    padding: 5px;
+    font-weight: 500;
+    font-family: font2;
+}
+#box1:hover{
+    box-shadow: 5px 5px 5px black;
+}
+#box2:hover{
+    box-shadow: 5px 5px 5px black;
+}
+#box3:hover{
+    box-shadow: 5px 5px 5px black;
+}
+#box4:hover{
+    box-shadow: 5px 5px 5px black;
+}
+
+
