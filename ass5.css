@@ -559,5 +559,244 @@ html, body{
 #box4:hover{
     box-shadow: 5px 5px 5px black;
 }
-
-
+#bigbox2{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 10px;
+}
+#box5{
+    height: 250px;
+    width: 250px;
+    margin-top: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    position: relative;
+    border: 1px solid black;
+    overflow: hidden;
+}
+#box5 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* smooth zoom */
+    transition: transform var(--card-zoom-duration) cubic-bezier(.2,.8,.2,1);
+    transform-origin: center center;
+    will-change: transform;
+    /* remove image corner radius so .card's overflow handles rounding */
+    border-radius: 10px;
+}
+#box5:hover img{
+    transform: scale(var(--card-zoom-scale));
+}
+#box5{
+    transition: box-shadow var(--card-zoom-duration) ease, transform var(--card-zoom-duration) ease;
+}
+#box5:hover{
+    box-shadow: var(--card-hover-shadow);
+    transform: translateY(-6px);
+}
+#box6{
+    height: 250px;
+    width: 250px;
+    margin-top: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    position: relative;
+    border: 1px solid black;
+    overflow: hidden;
+}
+#box6 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* smooth zoom */
+    transition: transform var(--card-zoom-duration) cubic-bezier(.2,.8,.2,1);
+    transform-origin: center center;
+    will-change: transform;
+    /* remove image corner radius so .card's overflow handles rounding */
+    border-radius: 10px;
+}
+#box6:hover img{
+    transform: scale(var(--card-zoom-scale));
+}
+#box6{
+    transition: box-shadow var(--card-zoom-duration) ease, transform var(--card-zoom-duration) ease;
+}
+#box6:hover{
+    box-shadow: var(--card-hover-shadow);
+    transform: translateY(-6px);
+}
+#box7{
+    height: 250px;
+    width: 250px;
+    margin-top: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    position: relative;
+    border: 1px solid black;
+    overflow: hidden;
+}
+#box7 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* smooth zoom */
+    transition: transform var(--card-zoom-duration) cubic-bezier(.2,.8,.2,1);
+    transform-origin: center center;
+    will-change: transform;
+    /* remove image corner radius so .card's overflow handles rounding */
+    border-radius: 10px;
+}
+#box7:hover img{
+    transform: scale(var(--card-zoom-scale));
+}
+#box7{
+    transition: box-shadow var(--card-zoom-duration) ease, transform var(--card-zoom-duration) ease;
+}
+#box7:hover{
+    box-shadow: var(--card-hover-shadow);
+    transform: translateY(-6px);
+}
+#box8{
+    height: 250px;
+    width: 250px;
+    margin-top: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    position: relative;
+    border: 1px solid black;
+    overflow: hidden;
+}
+#box8 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* smooth zoom */
+    transition: transform var(--card-zoom-duration) cubic-bezier(.2,.8,.2,1);
+    transform-origin: center center;
+    will-change: transform;
+    /* remove image corner radius so .card's overflow handles rounding */
+    border-radius: 10px;
+}
+#box8:hover img{
+    transform: scale(var(--card-zoom-scale));
+}
+#box8{
+    transition: box-shadow var(--card-zoom-duration) ease, transform var(--card-zoom-duration) ease;
+}
+#box8:hover{
+    box-shadow: var(--card-hover-shadow);
+    transform: translateY(-6px);
+}
+.bt5{
+    height: 40%;
+    width: 100%;
+    background: linear-gradient(transparent, rgba(13, 13, 13, 0.486));
+    position: absolute;
+    bottom: -40%;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.bt6{
+    height: 40%;
+    width: 100%;
+    background: linear-gradient(transparent, rgba(13, 13, 13, 0.486));
+    position: absolute;
+    bottom: -40%;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.bt7{
+    height: 40%;
+    width: 100%;
+    background: linear-gradient(transparent, rgba(13, 13, 13, 0.486));
+    position: absolute;
+    bottom: -40%;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.bt8{
+    height: 40%;
+    width: 100%;
+    background: linear-gradient(transparent, rgba(13, 13, 13, 0.486));
+    position: absolute;
+    bottom: -40%;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+#box5:hover .bt5{
+     /* rotate: 30deg; */
+     bottom: 0;
+     
+}
+#box6:hover .bt6{
+     /* rotate: 30deg; */
+     bottom: 0;
+     
+}
+#box7:hover .bt7{
+     /* rotate: 30deg; */
+     bottom: 0;
+     
+}
+#box8:hover .bt8{
+     /* rotate: 30deg; */
+     bottom: 0;
+     
+}
+.bt5 h4, .bt5 h3{
+    font-size: 20px;
+    color: white;
+    padding: 5px;
+    font-weight: 500;
+    font-family: font2;
+}
+.bt6 h4, .bt6 h3{
+    font-size: 20px;
+    color: white;
+    padding: 5px;
+    font-weight: 500;
+    font-family: font2;
+}
+.bt7 h4, .bt7 h3{
+    font-size: 20px;
+    color: white;
+    padding: 5px;
+    font-weight: 500;
+    font-family: font2;
+}
+.bt8 h4, .bt8 h3{
+    font-size: 20px;
+    color: white;
+    padding: 5px;
+    font-weight: 500;
+    font-family: font2;
+}
+#box5:hover{
+    box-shadow: 5px 5px 5px black;
+}
+#box6:hover{
+    box-shadow: 5px 5px 5px black;
+}
+#box7:hover{
+    box-shadow: 5px 5px 5px black;
+}
+#box8:hover{
+    box-shadow: 5px 5px 5px black;
+}
