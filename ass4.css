@@ -2,53 +2,47 @@
 /* Below-row: two side-by-side boxes under mid-bottom-row */
 #below-row {
     display: flex;
-    
     width: 100%;
-    /* margin: 30px 0 0 0; */
-    /* justify-content: center; */
-    /* margin: 20px; */
-}
-.below-box1{
-    /* flex: 1 1 0; */
-    height: 600px;
-    width: 750px;
-    background: #f3f3f3;
-    margin: 20px;
+    justify-content: center;
+    gap: 20px;
     padding: 20px;
-    /* box-shadow: 0 2px 8px rgba(0,0,0,0.07); */
-    text-align: center;
-    background-image: url(./promo_icloud_plus__d4639vh3tz2a_medium.jpg);
-    background-size: cover;
-    background-position: center;
 }
-.below-box2{
-    /* flex: 1 1 0; */
+.below-box1, .below-box2 {
     height: 600px;
     width: 750px;
     background: #f3f3f3;
-    
-    margin: 20px;
-    padding: 10px;
-    /* box-shadow: 0 2px 8px rgba(0,0,0,0.07); */
+    margin: 0;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     text-align: center;
-    background-image: url(./promo_airpodspro_3__f6xmza7bglei_medium.jpg);
     background-size: cover;
     background-position: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.below-box1 h1, .below-box2 h1{
+.below-box1 {
+    background-image: url(./promo_icloud_plus__d4639vh3tz2a_medium.jpg);
+}
+.below-box2 {
+    background-image: url(./promo_airpodspro_3__f6xmza7bglei_medium.jpg);
+}
+.below-box1:hover, .below-box2:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.below-box1 h1, .below-box2 h1 {
     font-size: 40px;
-    font-weight: 100;
-    padding-top: 20px;
-    color:black;
     font-weight: 200;
+    padding-top: 20px;
+    color: black;
 }
-.below-box1 h3, .below-box2 h3{
+.below-box1 h3, .below-box2 h3 {
     font-size: 20px;
     font-weight: 100;
-    color:black;
+    color: black;
 }
-.below-box1 button, .below-box2 button{
-    margin: 18px 10px; /* spacing between buttons */
+.below-box1 button, .below-box2 button {
+    margin: 18px 10px;
     padding: 10px 20px;
     border-radius: 20px;
     border: none;
@@ -57,6 +51,11 @@
     font-size: 15px;
     cursor: pointer;
     font-weight: 100;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.below-box1 button:hover, .below-box2 button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
 }
 
 @media (max-width: 800px) {
@@ -105,11 +104,19 @@ html, body{
     align-items: center;
     justify-content: center;
     gap: 35px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 #nav h4{
     color: white;
     font-weight: 100;
     font-size: 12px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+#nav h4:hover{
+    color: royalblue;
 }
 #center{
     height: 80%;
@@ -149,11 +156,20 @@ html, body{
     font-size: 15px;
     cursor: pointer;
     font-weight: 100;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 
 }
 #links button:nth-child(2){
     background-color: transparent;
     border: 1px solid royalblue;
+}
+#links button:hover{
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+#links button:nth-child(2):hover{
+    background-color: royalblue;
+    color: white;
 }
 #mid{
     height: 100%;
@@ -175,7 +191,7 @@ html, body{
     background-position: center;
 }
 
-#box1 button{
+#box1 button, #box2 button{
     margin: 18px 10px; /* spacing between buttons */
     padding: 10px 20px;
     border-radius: 20px;
@@ -185,6 +201,11 @@ html, body{
     font-size: 15px;
     cursor: pointer;
     font-weight: 100;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+#box1 button:hover, #box2 button:hover{
+    background-color: #0056b3;
+    transform: scale(1.05);
 }
 #box2{
     width: 100%;
@@ -228,6 +249,29 @@ html, body{
     justify-content: center;
     align-items: center;
 }
+#footer {
+    background-color: rgb(34, 34, 34);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-family: yoo;
+}
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer-links {
+    margin-top: 10px;
+}
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+.footer-links a:hover {
+    color: royalblue;
+}
 #box2 h3{
     text-align: center;
     font-size: 40px;
@@ -235,17 +279,7 @@ html, body{
     font-weight: 100;
     font-size: 20px;
 }
-#box2 button{
-    margin: 18px 10px; /* spacing between buttons */
-    padding: 10px 20px;
-    border-radius: 20px;
-    border: none;
-    background-color: royalblue;
-    color: white;
-    font-size: 15px;
-    cursor: pointer;
-    font-weight: 100;
-}
+
 
 
 
