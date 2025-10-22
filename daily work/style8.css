@@ -40,4 +40,87 @@ main section:nth-child(4) {
 }
 main section:nth-child(5) {
   background-image: url(https://i.pinimg.com/736x/c7/b0/a0/c7b0a0c17f42aeca9b5a857adf6de38b.jpg);
+}
+
+/* responsive improvements */
+main {
+  min-height: 100vh; /* ensure it fills viewport */
+}
+
+/* make the interactive expansion less aggressive on medium screens */
+@media (max-width: 1200px) {
+  main section {
+    transition: all 0.55s cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+  main section:hover {
+    flex-grow: 1.6;
+  }
+}
+/* tablets: reduce scale and ensure minimum height so images are visible */
+@media (max-width: 900px) {
+  main {
+    flex-wrap: nowrap;
+    height: auto;
+    align-items: stretch;
+  }
+  main section {
+    min-height: 40vh;
+    flex-basis: 0;
+    flex-grow: 1;
+  }
+  main section:hover {
+    flex-grow: 1.2;
+  }
+}
+/* small screens / phones: stack the sections vertically */
+@media (max-width: 600px) {
+  main {
+    flex-direction: column;
+    gap: 8px;
+  }
+  main section {
+    width: 100%;
+    height: auto;
+    min-height: 28vh;
+    flex-grow: 0;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 0 12px;
+  }
+  /* replace flex-grow expansion with a subtle zoom on touch devices */
+  main section:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+  }
+  /* spacing at bottom so last item isn't glued to edge */
+  main section:last-child {
+    margin-bottom: 24px;
+  }
+}
+/* remove aggressive hover behavior on devices that don't support hover */
+@media (hover: none) {
+  main section {
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+  }
+  main section:hover {
+    flex-grow: 1; /* no expansion */
+    transform: scale(1.03);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+  }
+}
+/* accessibility: ensure background images have good contrast via optional overlay (toggle by adding .overlay class) */
+main.section-overlay section.overlay::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
+  pointer-events: none;
+}
+
+/* ensure background images stay centered and crisp */
+main section {
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
 }/*# sourceMappingURL=style8.css.map */
