@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  anchor-name: --some-anchor;
+}
+body .box {
+  height: 200px;
+  width: 200px;
+}
+body .box:hover {
+  anchor-name: --some-anchor;
+}
+body .red {
+  background-color: red;
+}
+body .blue {
+  background-color: blue;
+}
+body .green {
+  background-color: rgb(12, 203, 12);
+}
+body .anchor {
+  background-color: whitesmoke;
+  border-radius: 10px;
+  position: absolute;
+  top: anchor(top);
+  left: anchor(left);
+  bottom: anchor(bottom);
+  right: anchor(right);
+  pointer-events: none;
+  position-anchor: --some-anchor;
+  transition: all 0.5s linear;
+  mix-blend-mode: difference;
+}/*# sourceMappingURL=style.css.map */
