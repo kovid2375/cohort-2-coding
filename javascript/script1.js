@@ -369,50 +369,50 @@
 
 // senario 2 : Bulk email sending simulation with error handling and parrallel promises ?
 
-const users =[
-    "kovid@gmail.com",
-    "aadarsh@gmail.com",
-    "venky@gmail.com",
-    "vanni@gmail.com",
-    "gmail@gmail.com"
-];
-function sendEmail(email){
-    return new Promise((resolve,reject)=>{
-        let time = Math.floor(Math.random()*5);
-        setTimeout(() => {
-            let probability = Math.floor(Math.random()*10);
-            if (probability <=5){
-                resolve(`Email sent to ${email} in ${time} seconds.`);
-            }
-            else{
-                reject(`Error sending email to ${email}.`);
-            }   
+// const users =[
+//     "kovid@gmail.com",
+//     "aadarsh@gmail.com",
+//     "venky@gmail.com",
+//     "vanni@gmail.com",
+//     "gmail@gmail.com"
+// ];
+// function sendEmail(email){
+//     return new Promise((resolve,reject)=>{
+//         let time = Math.floor(Math.random()*5);
+//         setTimeout(() => {
+//             let probability = Math.floor(Math.random()*10);
+//             if (probability <=5){
+//                 resolve(`Email sent to ${email} in ${time} seconds.`);
+//             }
+//             else{
+//                 reject(`Error sending email to ${email}.`);
+//             }   
 
-        }, time*1000);
-    });
+//         }, time*1000);
+//     });
 
-}
+// }
  
- async function sendEmails(userList){
+//  async function sendEmails(userList){
     
-        let allresponses = userList.map( function(email){
-            return sendEmail(email)
-            .then(function(successMessage){
-                return successMessage;
-            })
-            .catch(function(errorMessage){
-                return errorMessage;
-            });
-        });
-         let ans = await Promise.all(allresponses); 
-         ans.forEach(function(element) {
-    console.log(element);
-});
+//         let allresponses = userList.map( function(email){
+//             return sendEmail(email)
+//             .then(function(successMessage){
+//                 return successMessage;
+//             })
+//             .catch(function(errorMessage){
+//                 return errorMessage;
+//             });
+//         });
+//          let ans = await Promise.all(allresponses); 
+//          ans.forEach(function(element) {
+//     console.log(element);
+// });
     
    
 
-}
-sendEmails(users);
+// }
+// sendEmails(users);
 
 
 
