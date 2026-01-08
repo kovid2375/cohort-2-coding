@@ -293,6 +293,128 @@
 // if we compare an1.login and an2.login using equality operator (== or ===), the result will be true because both an1 and an2 share the same login method from the User prototype.
 // if we had defined the login method inside the constructor (uncommenting the this.login part), then each instance would have its own copy of the login method, and comparing an1.login and an2.login would result in false.
 
+// call, apply and bind
+
+//q10 create a function that prints this.name.
+// function abcd(){
+//     console.log(this.name);
+// }
+// let obj={
+//     name:"kovid"
+// }
+// abcd.call(obj); // using call to set 'this' to obj
+// // now use apply 
+// function abcd(a,b,c,d){
+//     console.log(this.name);
+// }
+// let obj1={
+//     name:"harsh"
+// }
+// abcd.apply(obj1,[1,2,3,4]);
+// // now use bind  
+// function abcd(){
+//     console.log(this.name);
+// }
+// let obj2={
+//     name:"aman"
+// }
+// let boundFunction=abcd.bind(obj2);
+// boundFunction();
+
+
+
+// error handling and async await--------
+
+// function getname() {
+//     return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         let name = Math.floor(Math.random() * 10);
+//         if(name %2 ===0){
+//             resolve(console.log("Even number: " + name));
+            
+//         }
+//         else{
+//             reject(console.log("Odd number: " + name));
+            
+//         }
+//     }, 1000);
+//     });
+
+// }
+// async function processName(){
+//     let v = await getname();
+//     console.log(v);
+// }
+// processName();
+
+// scenario 1 : wheather dashboard with error handling?
+// async function getWeather(city){
+//    try {
+//      let url=`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=ce56ad27673a6eaec25b2e4c40f18b1e&units=metric`;
+//      let response=await fetch(url);
+//      let realData= await response.json();
+//      if (realData.main.temp<0){
+//         console.log(`The weather in ${city} is ${realData.main.temp}°C. It's freezing!`);
+//      }
+//         else{
+//             console.log(`The weather in ${city} is ${realData.main.temp}°C. it 's above freezing.`);
+//         }
+//    } catch (error) {
+//     console.log("An error occurred: " + error.message);
+//    }
+    
+    
+// }
+// getWeather("bilaspur");
+
+// senario 2 : Bulk email sending simulation with error handling and parrallel promises ?
+
+const users =[
+    "kovid@gmail.com",
+    "aadarsh@gmail.com",
+    "venky@gmail.com",
+    "vanni@gmail.com",
+    "gmail@gmail.com"
+];
+function sendEmail(email){
+    return new Promise((resolve,reject)=>{
+        let time = Math.floor(Math.random()*5);
+        setTimeout(() => {
+            let probability = Math.floor(Math.random()*10);
+            if (probability <=5){
+                resolve(`Email sent to ${email} in ${time} seconds.`);
+            }
+            else{
+                reject(`Error sending email to ${email}.`);
+            }   
+
+        }, time*1000);
+    });
+
+}
+ 
+ async function sendEmails(userList){
+    
+        let allresponses = userList.map( function(email){
+            return sendEmail(email)
+            .then(function(successMessage){
+                return successMessage;
+            })
+            .catch(function(errorMessage){
+                return errorMessage;
+            });
+        });
+         let ans = await Promise.all(allresponses); 
+         ans.forEach(function(element) {
+    console.log(element);
+});
+    
+   
+
+}
+sendEmails(users);
+
+
 
 
 
